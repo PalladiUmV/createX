@@ -134,7 +134,7 @@ export const Events = () => {
 										<p>{eventText}</p>
 										<p>{eventDescr}</p>
 									</div>
-									<button className={`${switchEventStyle}__button ${switchEventStyle}__button_active button`}>
+									<button className={`${switchEventStyle}__button ${switchEventStyle}__button_active button-basic outline regular`}>
 										View more
 									</button>
 								</div>
@@ -149,3 +149,5 @@ export const Events = () => {
 		</>
 	)
 }
+
+// button-basic outline regular

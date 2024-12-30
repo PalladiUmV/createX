@@ -462,19 +462,21 @@ body {
 
   &__name p:first-child {
     font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
     color: #1e212c;
   }
 
   &__name p:last-child {
+    font-size: 16px;
     font-weight: 400;
+    line-height: 25.5px;
     color: #787a80;
   }
 
   &__button {
-    width: 136px;
-    height: 44px;
-    border-radius: 4px;
     justify-self: center;
+    // align-self: baseline;
 
     &_active:hover {
       background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
@@ -584,16 +586,14 @@ body {
     background-color: #ffcf2d;
 
     &:hover {
-      background: linear-gradient(
-        180deg,
-        rgba(30, 33, 44, 0) 43.9%,
-        rgba(30, 33, 44, 0.03) 55.21%,
-        rgba(30, 33, 44, 0.33) 68.73%,
-        rgba(30, 33, 44, 0.56) 76.17%,
-        rgba(30, 33, 44, 0.768225) 83.75%,
-        rgba(30, 33, 44, 0.92) 91.49%,
-        #1e212c 100%
-      );
+      background: linear-gradient(180deg,
+          rgba(30, 33, 44, 0) 43.9%,
+          rgba(30, 33, 44, 0.03) 55.21%,
+          rgba(30, 33, 44, 0.33) 68.73%,
+          rgba(30, 33, 44, 0.56) 76.17%,
+          rgba(30, 33, 44, 0.768225) 83.75%,
+          rgba(30, 33, 44, 0.92) 91.49%,
+          #1e212c 100%);
       border-radius: 4px;
     }
   }

@@ -78,11 +78,11 @@ export const Courses = () => {
 					<h6 className="courses__subtitle subtitle">Enjoy your studying!</h6>
 					<h1 className='courses__title title'>Our online courses</h1>
 					
-					{/* Кнопки чек */}
-					
-					<div>
-						<button className='button-basic'>Get consultation</button>
-					</div>
+					{/* <div>
+						<button className='button-basic outline large with-arrow'>Get consultation</button>
+						<button className='button-basic outline regular with-arrow'>Get consultation</button>
+						<button className='button-basic outline small with-arrow'>Get consultation</button>
+					</div> */}
 
 					{/* Кнопки чек */}
 

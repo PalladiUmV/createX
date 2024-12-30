@@ -14,7 +14,7 @@ export const Subscribe = () => {
 					</h2>
 					<div className="subscribe__subscribe-us">
 						<input type="text" placeholder='Your working email' />
-						<button className="button">Subscribe</button>
+						<button className="button-basic solid large">Subscribe</button>
 					</div>
 				</div>
 			</div>

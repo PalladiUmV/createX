@@ -1,17 +1,75 @@
 .button-basic {
   margin: 0;
-  padding: 0;
-  background: linear-gradient(rgba(255, 63, 58, 1), rgba(247, 94, 5, 1));
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   border: 1px solid #ff3f3a;
   border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  white-space: nowrap;
+  position: relative;
+
+  // Кнопка с фоном
+  &.solid {
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    color: #fff;
+  }
+
+  // Прозрачная кнопка
+  &.outline {
+    background-color: transparent;
+    color: #ff3f3a;
+  }
+
+  // Большая кнопка
+  &.large {
+    padding: 0 40px;
+    font-size: 16px;
+    line-height: 52px;
+  }
+
+  // Стандартная кнопка
+  &.regular {
+    padding: 0 32px;
+    font-size: 14px;
+    line-height: 44px;
+  }
+
+  // Маленькая кнопка
+  &.small {
+    padding: 0 24px;
+    font-size: 12px;
+    line-height: 36px;
+  }
+
+  // Кнопка со стрелкой
+  &.with-arrow {
+    &::after {
+      content: '→';
+      margin-left: 8px;
+      position: absolute;
+      font-size: 1em;
+    }
+
+    // Цвет стрелки для кнопок с классом .solid
+    &.solid::after {
+      color: #fff;
+    }
+
+    // Цвет стрелки для кнопок с классом .outline
+    &.outline::after {
+      color: #F75E05;
+    }
+
+    // Отступы справа для кнопок со стрелкой
+    &.large {
+      padding-right: 72px;
+    }
+
+    &.regular {
+      padding-right: 56px;
+    }
+
+    &.small {
+      padding-right: 48px;
+    }
+  }
 }
