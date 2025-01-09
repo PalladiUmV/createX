@@ -3,6 +3,7 @@ import { About } from '../About/AboutPage';
 import { Courses } from '../Courses/Courses';
 import { Events } from '../Events/Events';
 import { HomePage } from '../HomePage/HomePage';
+import { Blog } from '../Blog/Blog';
 import './App.scss'
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/about' element={<About />}></Route>
         <Route path='/courses' element={<Courses />}></Route>
         <Route path='/events' element={<Events />}></Route>
+        <Route path='/blog' element={<Blog />}></Route>
         <Route path="*" element={<Navigate to="/createx" replace />} />
       </Routes >
     </>

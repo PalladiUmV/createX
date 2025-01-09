@@ -1,0 +1,52 @@
+.homepage-blog {
+  margin-bottom: 180px;
+
+  &__button {
+    width: 158px;
+    height: 52px;
+  }
+
+  &__posts {
+    display: flex;
+  }
+
+  &__post {
+    width: 390px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    aside {
+      margin-top: 16px;
+      font-weight: 700;
+      font-size: 14px;
+      color: #787a80;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    &-title {
+      font-size: 20px;
+      color: #1e212c;
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: 16px;
+      color: #424551;
+      margin-bottom: 16px;
+    }
+
+    &-more {
+      text-decoration: none;
+      margin-right: 11px;
+      color: #1e212c;
+
+      &:hover {
+        color: #ff3f3a;
+      }
+    }
+  }
+}

@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 import { Header } from '../Header/Header'
 import { Certificate } from '../CertificateComponent/Certificate'
 import { Subscribe } from '../Subscribe/Subscribe'
-import { OurBlog } from '../OurBlog/OurBlog'
 import { Footer } from '../Footer/Footer'
+import { HomepageBlog } from '../HomepageBlog/HomepageBlog'
 // import persons image 
 import jerome from '../../images/persons/Jerome.svg'
 import dianne from '../../images/persons/Dianne.svg'
@@ -28,10 +28,6 @@ import hover from '../../images/hover.svg'
 
 import illustrationBenefints from '../../images/benefits-illustration.svg'
 import mainIllustration from '../../images/main-page-illustration.svg'
-
-
-
-
 
 
 
@@ -70,8 +66,8 @@ export const HomePage = () => {
 								Enjoy studying with Createx Online Courses
 							</h1>
 							<div className="main-info__main-buttons">
-								<button className="main-info__about-button button">About us</button>
-								<button className="main-info__explore-button button_orange">Explore courses</button>
+								<button className="button-basic outline large">About us</button>
+								<button className="button-basic solid large">Explore courses</button>
 							</div>
 						</div>
 						<div className="main-info__right-part">
@@ -133,7 +129,7 @@ export const HomePage = () => {
 								>
 							</li>
 						</ul>
-						<button className="about__button button_orange">More about us</button>
+						<button className="button-basic solid regular">More about us</button>
 					</div>
 				</div>
 			</div>
@@ -147,7 +143,7 @@ export const HomePage = () => {
 						<h2 className="featured__title title">
 							Featured Courses
 						</h2>
-						<button className="featured__button button asfe">
+						<button className="button-basic outline large">
 							<Link to='/courses'>View all courses</Link>
 						</button>
 					</div>
@@ -329,7 +325,7 @@ export const HomePage = () => {
 								<p>Formation of the organizational structure of the company in the face of uncertainty.</p>
 								<p>Onine master-class</p>
 							</div>
-							<button className="event-horizontal__button event-horizontal__button_active button">
+							<button className="button-basic outline regular">
 								View more
 							</button>
 						</div>
@@ -349,7 +345,7 @@ export const HomePage = () => {
 								<p>Building a customer service department. Best Practices.</p>
 								<p>Onine lecture</p>
 							</div>
-							<button className="event-horizontal__button event-horizontal__button_active button">
+							<button className="button-basic outline regular">
 								View more
 							</button>
 						</div>
@@ -369,13 +365,13 @@ export const HomePage = () => {
 								<p>How to apply methods of speculative design in practice. Worldbuilding prototyping.</p>
 								<p>Onine workshop</p>
 							</div>
-							<button className="event-horizontal__button event-horizontal__button_active button">
+							<button className="button-basic outline regular">
 								View more
 							</button>
 						</div>
 						<div className="show-all-events">
 							<button className='show-all-events__more'>Do you want more?</button>
-							<button className='show-all-events__explore button'>
+							<button className='button-basic solid large'>
 								<Link to='/events'>Explore all events</Link>
 							</button>
 						</div>
@@ -472,11 +468,8 @@ export const HomePage = () => {
 					</div>
 				</div>
 			</div>
-
-
-			<OurBlog />
+			<HomepageBlog />
 			<Subscribe />
-
 			<Footer />
 		</>
 	)

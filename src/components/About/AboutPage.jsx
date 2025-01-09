@@ -1,5 +1,4 @@
 import { Header } from '../Header/Header'
-import { OurBlog } from '../OurBlog/OurBlog'
 import { Subscribe } from '../Subscribe/Subscribe'
 import { Footer } from '../Footer/Footer'
 
@@ -51,6 +50,7 @@ import leslieSlider from '../../images/persons/slider/leslie-slider.svg'
 import kathrynSlider from '../../images/persons/slider/kathryn-slider.svg'
 import brooklynSlider from '../../images/persons/slider/brooklyn-slider.svg'
 import codySlider from '../../images/persons/slider/cody-slider.svg'
+import { HomepageBlog } from '../HomepageBlog/HomepageBlog'
 
 
 
@@ -336,7 +336,7 @@ export const About = () => {
 						</div>
 					</div>
 				</div>
-				<OurBlog />
+				<HomepageBlog />
 				<Subscribe />
 				<Footer />
 			</div>

@@ -7,9 +7,14 @@
   border-radius: 4px;
   position: relative;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   // Кнопка с фоном
   &.solid {
-    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
     color: #fff;
   }
 
@@ -43,7 +48,7 @@
   // Кнопка со стрелкой
   &.with-arrow {
     &::after {
-      content: '→';
+      content: "→";
       margin-left: 8px;
       position: absolute;
       font-size: 1em;
@@ -56,7 +61,7 @@
 
     // Цвет стрелки для кнопок с классом .outline
     &.outline::after {
-      color: #F75E05;
+      color: #f75e05;
     }
 
     // Отступы справа для кнопок со стрелкой

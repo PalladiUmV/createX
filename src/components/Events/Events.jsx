@@ -118,7 +118,7 @@ export const Events = () => {
 							const { eventDateNumber, eventTime, eventMonthName, eventText, eventDescr } = item;
 							return (
 
-								<div className={`events-page__event ${switchEventStyle}`}>
+								<div className={`events-page__event ${switchEventStyle}`} key={index+item}>
 									<div className={`${switchEventStyle}__date`}>
 										<span className='date-number'>
 											{eventDateNumber}
