@@ -1,82 +1,144 @@
 import './HomepageBlog.scss'
 
+import {
+    divider,
+    calendar,
+    clock,
+    arrowRight,
+    podcast,
+    video,
+    article,
+    iconMic,
+    iconVideo,
+    iconArticle,
+} from '../../images/images'
 
-import divider from '../../images/our-blog-latest-posts/divider.svg'
-import calendar from '../../images/our-blog-latest-posts/Calendar.svg'
-import clock from '../../images/our-blog-latest-posts/Clock.svg'
-import arrowRight from '../../images/our-blog-latest-posts/arrowRight.svg'
-import podcast from '../../images/our-blog-latest-posts/podcast.svg'
-import video from '../../images/our-blog-latest-posts/video.svg'
-import article from '../../images/our-blog-latest-posts/article.svg'
 import { Link } from 'react-router-dom'
 
 export const HomepageBlog = () => {
-	return (
-		<div className="wrapper">
-			<div className="homepage-blog">
-				<h6 className='homepage-blog__subtitle subtitle'>
-					Our blog
-				</h6>
-				<div className="flex sb aic">
-					<h2 className='homepage-blog__title title'>
-						Latest posts
-					</h2>
-					<button className="button-basic solid large">
-						<Link to="/blog">Go to blog</Link>
-					</button>
-				</div>
+    return (
+        <div className='wrapper'>
+            <div className='homepage-blog'>
+                <h6 className='homepage-blog__subtitle subtitle'>Our blog</h6>
+                <div className='flex sb aic'>
+                    <h2 className='homepage-blog__title title'>Latest posts</h2>
+                    <button className='button-basic solid large'>
+                        <Link to='/blog'>Go to blog</Link>
+                    </button>
+                </div>
 
-				<div className="homepage-blog__posts">
+                <div className='blog-container'>
+                    <div className='blog-post'>
+                        <div className='relative'>
+                            <span className='blog-post__blog-format'>
+                                <img src={iconMic} alt='podcasticon' />
+                                <label>Podcast</label>
+                            </span>
 
-					<div className="homepage-blog__post">
-						<img src={podcast} alt="podcast" />
-						<aside>
-							<span>Marketing</span> <span><img src={divider} alt="divider" /></span>
-							<span> <img src={calendar} alt="calendar" /></span> <span>September 4, 2020</span> <span><img src={divider} alt="divider" /></span>
-							<span><img src={clock} alt="clock" /></span> <span> 36 min</span>
-						</aside>
-						<div className="homepage-blog__post-title">
-							<p>What is traffic arbitrage and does it really make money?</p>
-						</div>
-						<div className="homepage-blog__post-description">
-							Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...
-						</div>
-						<a className="homepage-blog__post-more" href="">Listen</a> <img src={arrowRight} alt="arrowRight" />
-					</div>
-
-					<div className="homepage-blog__post">
-						<img src={video} alt="podcast" />
-						<aside>
-							<span>Management</span> <span><img src={divider} alt="divider" /></span>
-							<span> <img src={calendar} alt="calendar" /></span> <span>August 25, 2020</span> <span><img src={divider} alt="divider" /></span>
-							<span><img src={clock} alt="clock" /></span> <span> 45 min</span>
-						</aside>
-						<div className="homepage-blog__post-title">
-							<p>What to do and who to talk to if you want to get feedback on the product</p>
-						</div>
-						<div className="homepage-blog__post-description">
-							Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...
-						</div>
-						<a className="homepage-blog__post-more" href="">Watch</a> <img src={arrowRight} alt="arrowRight" />
-					</div>
-
-					<div className="homepage-blog__post">
-						<img src={article} alt="podcast" />
-						<aside>
-							<span>Marketing</span> <span><img src={divider} alt="divider" /></span>
-							<span> <img src={calendar} alt="calendar" /></span> <span>September 4, 2020</span> <span><img src={divider} alt="divider" /></span>
-							<span><img src={clock} alt="clock" /></span> <span> 36 min</span>
-						</aside>
-						<div className="homepage-blog__post-title">
-							<p>What is traffic arbitrage and does it really make money?</p>
-						</div>
-						<div className="homepage-blog__post-description">
-							Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...
-						</div>
-						<a className="homepage-blog__post-more" href="">Listen</a> <img src={arrowRight} alt="arrowRight" />
-					</div>
-				</div>
-			</div>
-		</div>
-	)
+                            <img
+                                className='blog-post__image'
+                                src={podcast}
+                                alt='podcast'
+                            />
+                        </div>
+                        <aside>
+                            <span className='blog-post__major'>Marketing</span>
+                            <img src={divider} alt='divider' />
+                            <div className='blog-post__date'>
+                                <img src={calendar} alt='calendar' />
+                                <span>September 4, 2020</span>{' '}
+                            </div>
+                            <img src={divider} alt='divider' />
+                            <div className='blog-post__time'>
+                                <span>
+                                    <img src={clock} alt='clock' />
+                                </span>{' '}
+                                <span>36 min</span>
+                            </div>
+                        </aside>
+                        <div className='blog-post__title'>
+                            What is traffic arbitrage and does it really make
+                            money?
+                        </div>
+                        <p className='blog-post__description'>
+                            Pharetra, ullamcorper iaculis viverra parturient sed
+                            id sed. Convallis proin dignissim lacus, purus
+                            gravida...
+                        </p>
+                        <a className='blog-post__button-more' href=''>
+                            Listen
+                        </a>
+                        <img src={arrowRight} alt='arrowRight' />
+                    </div>
+                    <div className='blog-post'>
+                        <div className='relative'>
+                            <span className='blog-post__blog-format'>
+                                <img src={iconVideo} alt='podcasticon' />
+                                <label>Video</label>
+                            </span>
+                            <img src={video} alt='podcast' />
+                        </div>
+                        <aside>
+                            <span className='blog-post__major'>Management</span>
+                            <img src={divider} alt='divider' />
+                            <div className='blog-post__date'>
+                                <img src={calendar} alt='calendar' />
+                                <span>August 25, 2020</span>{' '}
+                            </div>
+                            <img src={divider} alt='divider' />
+                            <div className='blog-post__time'>
+                                <span>
+                                    <img src={clock} alt='clock' />
+                                </span>{' '}
+                                <span>45 min</span>
+                            </div>
+                        </aside>
+                        <div className='blog-post__title'>
+                            What to do and who to talk to if you want to get
+                            feedback on the product
+                        </div>
+                        <p className='blog-post__description'>
+                            Neque a, senectus consectetur odio in aliquet nec
+                            eu. Ultricies ac nibh urna urna sagittis faucibus...
+                        </p>
+                        <a className='blog-post__button-more' href=''>
+                            Watch
+                        </a>
+                        <img src={arrowRight} alt='arrowRight' />
+                    </div>
+                    <div className='blog-post'>
+                        <div className='relative'>
+                            <span className='blog-post__blog-format'>
+                                <img src={iconArticle} alt='podcasticon' />
+                                <label>Article</label>
+                            </span>
+                            <img src={article} alt='podcast' />
+                        </div>
+                        <aside>
+                            <span className='blog-post__major'>Design</span>
+                            <img src={divider} alt='divider' />
+                            <div className='blog-post__date'>
+                                <img src={calendar} alt='calendar' />
+                                <span>August 8, 2020</span>{' '}
+                            </div>
+                            <img src={divider} alt='divider' />
+                        </aside>
+                        <div className='blog-post__title'>
+                            Should you choose a creative profession if you are
+                            attracted to creativity?
+                        </div>
+                        <p className='blog-post__description'>
+                            Curabitur nisl tincidunt eros venenatis vestibulum
+                            ac placerat. Tortor, viverra sed vulputate
+                            ultrices...
+                        </p>
+                        <a className='blog-post__button-more' href=''>
+                            Read
+                        </a>
+                        <img src={arrowRight} alt='arrowRight' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
