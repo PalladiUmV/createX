@@ -77,13 +77,16 @@
         display: flex;
         align-items: center;
         color: rgba(215, 218, 221, 1);
-        text-decoration: none;
+        text-decoration: none !important;
         padding: 10px 20px;
         &:hover {
             border: 1px solid rgba(255, 63, 58, 1);
             color: rgba(255, 63, 58, 1);
             border-radius: 4px;
             cursor: pointer;
+        }
+        &:active {
+            text-decoration: none;
         }
         &:nth-child(2) {
             &::before {
@@ -133,6 +136,12 @@
 
 .blog-post {
     width: 390px;
+    &__link {
+        text-decoration: none;
+    }
+    &:hover {
+        cursor: pointer;
+    }
 
     &:nth-child(4) {
         width: 705px;
@@ -151,6 +160,7 @@
         top: 12px;
         left: 12px;
         padding: 4px 8px 4px 10px;
+        color: #424551;
     }
     &__image {
         position: relative;
@@ -180,6 +190,7 @@
         font-size: 20px;
         font-weight: 700;
         line-height: 30px;
+        color: #1e212c !important;
     }
 
     &__description {
@@ -192,7 +203,7 @@
     &__button-more {
         text-decoration: none;
         margin-right: 11px;
-        color: #1e212c !important;
+        color: #1e212c;
 
         &:hover {
             color: #ff3f3a;
